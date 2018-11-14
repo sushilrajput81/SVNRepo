@@ -1,6 +1,5 @@
 FROM tomcat
-BUILD -t name/tomcat 
-docker cp **/target/*.war:/usr/local/tomcat/webapps/
+COPY **/target/*.war:/usr/local/tomcat/webapps/*.war
 RUN -d -p 8080:8080 tomcat
 
 EXPOSE 8080
