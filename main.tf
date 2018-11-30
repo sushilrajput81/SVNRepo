@@ -1,6 +1,10 @@
 
-variable "aws_access_key_id"{}
-variable "aws_access_key_id"{}
+variable "aws_access_key_id"{
+default = "ak"
+}
+variable "aws_secret_access_key"{
+default = "sk"
+}
 
 
 variable "region" {
