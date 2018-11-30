@@ -1,9 +1,9 @@
 
 variable "aws_access_key_id"{
-default = "ak"
+default = ${ak}
 }
 variable "aws_secret_access_key"{
-default = "sk"
+default = ${sk}
 }
 
 
