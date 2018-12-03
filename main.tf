@@ -5,7 +5,7 @@ variable "aws_secret_access_key"{}
 
 variable "region" {
   description = "AWS region"
-  default = "us-east-2"
+  default = "ap-south-1"
 }
 
 # Setup our aws provider
