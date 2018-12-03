@@ -16,8 +16,6 @@ provider "aws" {
 }
 
 
-#resource "aws_ecr_repository" "sushil" {
- # name = "docker-ecs"
-
-
-#}
+resource "aws_ecr_repository" "sushil" {
+  name = "docker-ecs"
+}
