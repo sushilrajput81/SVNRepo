@@ -32,7 +32,7 @@ resource "aws_ecs_task_definition" "demo" {
 [
   {
   
-    "cpu": 12,
+    "cpu": 1024,
     "environment": [{
       "name": "SECRET",
       "value": "KEY"
