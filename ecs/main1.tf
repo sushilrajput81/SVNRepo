@@ -38,8 +38,8 @@ resource "aws_ecs_task_definition" "demo" {
       "value": "KEY"
     }],
     "essential": true,
-    "image": "309244954780.dkr.ecr.us-east-2.amazonaws.com/docker-ecs:latest",
-    "memory": 128,
+    "image": "docker.io/piplinedocker/dockerimage:firsttry",
+    "memory": 500,
     "memoryReservation": 64,
     "name": "demo",
      "portMappings": [
@@ -121,8 +121,6 @@ resource "aws_iam_instance_profile" "ingest" {
 resource "aws_instance" "demo" {
   # ECS-optimized AMI for us-east-1
   ami = "ami-956e52f0"
-  vpc_security_group_ids =["sg-9899f4f2"]
-  subnet_id   =  "subnet-6942bd24"
   instance_type = "t2.micro"
   key_name="sushil"
   user_data = <<EOF
